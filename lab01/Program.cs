@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace lab01
 {
@@ -57,9 +58,28 @@ namespace lab01
             
         }
 
-
+            static int[] GetSum(int[] array)
+            {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
             }
-            
+            if (sum < 20)
+                throw new Exception();
+            {
+                Console.WriteLine($"Value of {sum} is too low");
     
         }
+            return sum;
     }
+
+        static int GetProduct(int[] array, int sum)
+        {
+            Console.WriteLine($"Select a number between 1 and {x - 1}.");
+            int product = 0;
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return product;
+        }
